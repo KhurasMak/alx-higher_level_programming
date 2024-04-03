@@ -6,8 +6,9 @@ class Square:
     """empty class"""
     def __init__(self, size=0):
         """initialize sqaure attributes"""
-        if not type(size) == int:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size <= -1:
             raise ValueError("size must be >= 0")
-        self.__size = size
+        else:
+            self.__size = size

@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"""defining a class"""
+"""class Square."""
 
 
 class Square:
+    """empty class"""
     def __init__(self, size=0):
+        """initialize sqaure attributes"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size <= -1:
